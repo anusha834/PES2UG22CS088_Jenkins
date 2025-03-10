@@ -14,7 +14,9 @@ pipeline {
         stage('Build') { 
             steps { 
                 build 'PES2UG22CS088-1'
-                sh 'g++ main.cpp -o output'
+               
+                sh 'g++ -o  main.cp -o output'  // Intentional mistake (should be .cpp)
+
             } 
         }
 
